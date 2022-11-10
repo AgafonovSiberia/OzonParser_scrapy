@@ -2,7 +2,7 @@
 ## Парсер маркетплейса Ozon на <a href="https://scrapy.org/">Scrapy</a>
 В данной конкретной конфигурации парсит операционные системы 100 первых смартфонов, отсортированных по рейтингу. Возвращает распределение по версиям ОС.<br><br>
 Результат выводится в терминал, а так же сохраняется в файле **result.json.**<br>
-Для обхода **CloudFlare** используется web-driver <a href="https://pypi.org/project/selenium-stealth/">selenium_stealth</a>, незаметно вызываемый в промежуточном ПО Scrapy.
+Для обхода **CloudFlare** используется **web-driver** <a href="https://pypi.org/project/selenium-stealth/">selenium_stealth</a>, незаметно вызываемый в промежуточном ПО Scrapy.
 
 
 ## Запуск
