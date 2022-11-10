@@ -4,7 +4,6 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-
 def create_web_driver_stealth():
     options = webdriver.ChromeOptions()
     options.add_argument("start-maximized")

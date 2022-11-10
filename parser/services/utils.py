@@ -35,6 +35,7 @@ def get_os_version(cached_data: List[dict]) -> str:
     :param cached_data: список параметров, содержащих версию ОС
     :return: str - (os_version)
     """
+    version = None
     for record in cached_data:
         current_key = record.get("key")
         if current_key in OS_PARAMS_NAMES:

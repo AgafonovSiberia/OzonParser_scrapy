@@ -1,7 +1,7 @@
 custom_settings = {
         "DOWNLOADER_MIDDLEWARES": {'parser.spider.middlewares.SeleniumStealthMiddleware': 1},
-        "LOG_LEVEL": 'INFO'
+        "LOG_LEVEL": 'WARNING'
     }
 
-PRODUCT_COUNT = 10
+PRODUCT_COUNT = 20
 
