@@ -1,8 +1,8 @@
 
 ## Парсер маркетплейса Ozon на <a href="https://scrapy.org/">Scrapy</a>
 В данной конфигурации парсит операционные системы смартфонов, отсортированных по рейтингу.
-Результат выводится в терминал, а так же сохраняется в файле result.json.
-Для обхода CloudFlare используется web-driver selenium_stealth, вызываемый в промежуточном ПО Scrapy.
+Результат выводится в терминал, а так же сохраняется в файле result.json.<br>
+Для обхода CloudFlare используется web-driver <a href="https://pypi.org/project/selenium-stealth/">selenium_stealth</a>, незаметно вызываемый в промежуточном ПО Scrapy.
 
 
 ## Запуск
