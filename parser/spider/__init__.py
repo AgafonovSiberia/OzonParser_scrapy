@@ -1,0 +1,1 @@
+from .ozon_spider import OzonSpider
