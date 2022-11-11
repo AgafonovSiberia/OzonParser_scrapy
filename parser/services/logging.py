@@ -11,7 +11,7 @@ stdout_handler = logging.StreamHandler(sys.stdout)
 stdout_handler.setLevel(logging.INFO)
 stdout_handler.setFormatter(formatter)
 
-file_handler = logging.FileHandler('BaseClient.log')
+file_handler = logging.FileHandler('OzonParser.log')
 file_handler.setLevel(logging.INFO)
 file_handler.setFormatter(formatter)
 
