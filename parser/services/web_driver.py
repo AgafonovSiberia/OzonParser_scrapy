@@ -1,10 +1,11 @@
+from scrapy import Request
 from selenium import webdriver
 from selenium_stealth import stealth
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-def create_web_driver_stealth():
+def create_web_driver_stealth() -> webdriver.Chrome:
     options = webdriver.ChromeOptions()
     options.add_argument("start-maximized")
     options.add_argument("--headless")
@@ -26,3 +27,11 @@ def create_web_driver_stealth():
     return stealth_driver
 
 
+class SeleniumStealthRequest(Request):
+    def __init__(self, timeout: int = 0, page_scroll: bool = False, screenshot: bool = False,
+                 *args, **kwargs):
+        self.timeout = timeout
+        self.page_scroll = page_scroll
+        self.screenshot = screenshot
+
+        super().__init__(*args, **kwargs)

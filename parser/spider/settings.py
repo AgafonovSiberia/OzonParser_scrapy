@@ -3,5 +3,5 @@ custom_settings = {
         "LOG_LEVEL": 'WARNING'
     }
 
-PRODUCT_COUNT = 20
+PRODUCT_COUNT = 100
 

@@ -5,18 +5,22 @@ BLOCK_NAMES = ("Общие", "Основные")
 OS_PARAMS_NAMES = ("AndroidVersion", "iOSVer")
 
 
-def get_characteristics(data_json: dict) -> List:
+def get_characteristics(data_json: dict) -> list:
     """
     Позволяет получить блок, содержащий характеристики товара
     :param data_json: json-response from OZON-API
     :return:
     """
-    widgets = data_json["widgetStates"]["webCharacteristics-939965-pdpPage2column-2"]
-    widgets = json.loads(widgets)
+    char_widget = None
+    widgets_list = data_json["widgetStates"]
+    for widget_name, widget_value in widgets_list.items():
+        if "webCharacteristics" in widget_name:
+            char_widget = widget_value
+    widgets = json.loads(char_widget)
     return widgets.get("characteristics")
 
 
-def get_cached_data(characteristics: list) -> List[dict]:
+def get_cached_data(characteristics: list) -> list[dict]:
     """
     Сохраняет в один список все параметры (словари) блоков, указанных в BLOCK_NAMES
     :param characteristics: List[dict] список всех блоков, содержащихся в характеристиках

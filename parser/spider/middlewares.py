@@ -2,8 +2,7 @@ import time
 from scrapy import signals
 from scrapy.http import HtmlResponse
 
-from parser.services.http_request import SeleniumStealthRequest
-from parser.services.web_driver import create_web_driver_stealth
+from parser.services.web_driver import create_web_driver_stealth, SeleniumStealthRequest
 from selenium.webdriver.support.ui import WebDriverWait
 
 
