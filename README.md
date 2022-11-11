@@ -1,8 +1,11 @@
+![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Scrapy](https://img.shields.io/badge/-Scrapy-green?style=for-the-badge&logoColor=white)
 
 ## Парсер маркетплейса Ozon на <a href="https://scrapy.org/">Scrapy</a>
-В данной конкретной конфигурации парсит операционные системы смартфонов, отсортированных по рейтингу.<br>
-Результат выводится в терминал, а так же сохраняется в файле result.json.<br>
-Для обхода CloudFlare используется web-driver <a href="https://pypi.org/project/selenium-stealth/">selenium_stealth</a>, незаметно вызываемый в промежуточном ПО Scrapy.
+В данной **конкретной** конфигурации парсит операционные системы 100 первых смартфонов, отсортированных по рейтингу. Возвращает распределение по версиям ОС.<br><br>
+Результат выводится в терминал, а так же сохраняется в файле **result.json.**<br>
+Для обхода **CloudFlare** используется **web-driver** <a href="https://pypi.org/project/selenium-stealth/">selenium_stealth</a>, незаметно вызываемый в промежуточном ПО Scrapy.
 
 
 ## Запуск
